@@ -1,0 +1,10 @@
+*.egg-info
+*.pyc
+.cache/
+build/
+dist/
+.env
+__pycache__
+.coverage
+.DS_Store
+htmlcov/
