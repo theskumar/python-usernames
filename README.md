@@ -6,9 +6,11 @@ Python library to validate usernames suitable for use in public facing applicati
 
 ## Features
 
-- Proviedes a default regex validator
-- Validates against list of banned words that should not be used as username.
+- Provides a default regex validator
+- Validates against list of [banned words] that should not be used as username.
 - Python 2.6, 2.7, 3.3, 3.4
+
+[banned words]: https://github.com/theskumar/python-usernames/blob/master/usernames/reserved_words.py
 
 ## Installation
 
