@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/theskumar/python-usernames.svg?branch=v0.1.0)](https://travis-ci.org/theskumar/python-usernames) [![Coverage Status](https://coveralls.io/repos/theskumar/python-usernames/badge.svg?branch=master&service=github)](https://coveralls.io/github/theskumar/python-usernames?branch=master) [![PyPI version](https://badge.fury.io/py/python-usernames.svg)](http://badge.fury.io/py/python-usernames) [![PyPI](https://img.shields.io/pypi/dm/python-usernames.svg)](https://pypi.python.org/pypi/python-usernames)
 
-Python library to validate usernames suitable for use in public facing applications.
+Python library to validate usernames suitable for use in public facing applications where use can choose login names and sub-domains.
 
 ## Features
 
