@@ -1,17 +1,30 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from setuptools import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
+
+with open('README.md') as readme_file:
+    readme = readme_file.read()
 
 setup(
     name="python-usernames",
     description="Python library to validate usernames suitable for use in public facing applications.",
+    long_description=readme,
     version="0.1.1",
     author="Saurabh Kumar",
     author_email="me+github@saurabh-kumar.com",
     url="http://github.com/theskumar/python-usernames",
-    keywords=['username', 'validation', 'registration', 'python', 'safe'],
-    packages=['usernames'],
+
+    packages=[
+        str('usernames'),
+    ],
+    package_dir={'usernames': 'usernames'},
+    include_package_data=True,
+    zip_safe=False,
+    license='MIT',
     classifiers=[
         # As from https://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 1 - Planning',
@@ -43,7 +56,10 @@ setup(
         'Topic :: Utilities',
         # 'Environment :: Web Environment',
         # 'Framework :: Django',
-    ]
+    ],
+    keywords=(
+        'username', 'validation', 'registration', 'python', 'safe', 'signup'
+    ),
 )
 
 # (*) Please direct queries to the discussion group, rather than to me directly
