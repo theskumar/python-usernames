@@ -10,15 +10,8 @@ setup(
     author="Saurabh Kumar",
     author_email="me+github@saurabh-kumar.com",
     url="http://github.com/theskumar/python-usernames",
-    keywords=['username', 'validation', 'registration', 'python'],
+    keywords=['username', 'validation', 'registration', 'python', 'safe'],
     py_modules=['usernames'],
-    install_requires=[
-        'click>=5.0',
-    ],
-    entry_points='''
-        [console_scripts]
-        validate_username=usernames:cli
-    ''',
     classifiers=[
         # As from https://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 1 - Planning',
