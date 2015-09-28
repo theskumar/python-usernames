@@ -6,7 +6,7 @@ from setuptools import setup
 setup(
     name="python-usernames",
     description="Python library to validate usernames suitable for use in public facing applications.",
-    version="0.0.1",
+    version="0.1.0",
     author="Saurabh Kumar",
     author_email="me+github@saurabh-kumar.com",
     url="http://github.com/theskumar/python-usernames",
