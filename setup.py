@@ -11,7 +11,7 @@ setup(
     author_email="me+github@saurabh-kumar.com",
     url="http://github.com/theskumar/python-usernames",
     keywords=['username', 'validation', 'registration', 'python', 'safe'],
-    py_modules=['usernames'],
+    packages=['usernames'],
     classifiers=[
         # As from https://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 1 - Planning',
