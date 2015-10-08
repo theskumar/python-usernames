@@ -7,8 +7,11 @@ def test_usernames():
         '#',
         '',
         '()',
+        '-',
         '-hello',
+        '.',
         '.hello',
+        '_',
         'fuck',
         'hel--lo',
         'hel-.lo',
@@ -20,6 +23,7 @@ def test_usernames():
     ]
 
     safe_words = [
+        'a'
         '10101',
         '1he-llo',
         '_hello',
