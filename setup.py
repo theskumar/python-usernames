@@ -13,7 +13,7 @@ setup(
     name="python-usernames",
     description="Python library to validate usernames suitable for use in public facing applications.",
     long_description=readme,
-    version="0.1.2",
+    version="0.1.3",
     author="Saurabh Kumar",
     author_email="me+github@saurabh-kumar.com",
     url="http://github.com/theskumar/python-usernames",
