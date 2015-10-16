@@ -54,6 +54,12 @@ The default regular expression is as follows:
     (?<![.-])               # no - or . at the end
     $                       # end of string
 
+**Note:**
+
+Words like ``bigcock12`` will validated just fine, only equality against
+the `banned word lists <https://github.com/theskumar/python-usernames/blob/master/usernames/reserved_words.py>`__
+is checked. We don't try to be smart to avoid `Scunthorpe problem <https://en.wikipedia.org/wiki/Scunthorpe_problem>`__.
+If you can come up with a algorithm/solution, please create an issue/pr :).
 
 License
 -------
