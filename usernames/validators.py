@@ -1,13 +1,17 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
 import re
 
 from .reserved_words import get_reserved_wordlist
 
+
 username_regex = re.compile(r"""
     ^                       # beginning of string
+    (?!_$)                  # no only _
     (?![-.])                # no - or . at the beginning
     (?!.*[_.-]{2})          # no __ or _. or ._ or .. or -- inside
-    [a-zA-Z0-9_.-].+        # allowed characters, atleast one must be present
+    [a-zA-Z0-9_.-]+         # allowed characters, atleast one must be present
     (?<![.-])               # no - or . at the end
     $                       # end of string
     """, re.X)

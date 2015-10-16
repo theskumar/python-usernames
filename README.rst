@@ -47,9 +47,10 @@ The default regular expression is as follows:
 ::
 
     ^                       # beginning of string
+    (?!_$)                  # no only _
     (?![-.])                # no - or . at the beginning
     (?!.*[_.-]{2})          # no __ or _. or ._ or .. or -- inside
-    [a-zA-Z0-9_.-].+        # allowed characters, atleast one must be present
+    [a-zA-Z0-9_.-]+         # allowed characters, atleast one must be present
     (?<![.-])               # no - or . at the end
     $                       # end of string
 
