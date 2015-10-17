@@ -42,8 +42,8 @@ _d = ("about|access|account|accounts|add|address|adm|admin|administration|adult|
 
 _d += ("anal|anus|arse|ass|ballsack|balls|bastard|bitch|biatch|bloody|blowjob|bollock|bollok|boner|"
        "boob|bugger|bum|butt|buttplug|clitoris|cock|coon|crap|cunt|damn|dick|dildo|dyke|fag|feck|"
-       "fellate|fellatio|felching|fuck|fudgepacker|fudge|packer|flange|Goddamn|God|damn|hell|homo|"
-       "jerk|jizz|knobend|knob|end|labia|lmao|lmfao|muff|nigger|nigga|omg|penis|piss|poop|prick|pube|"
+       "fellate|fellatio|felching|fuck|fucker|fudgepacker|fudge|packer|flange|Goddamn|God|damn|hell|homo|"
+       "jerk|jizz|knobend|knob|end|labia|lmao|lmfao|motherfucker|muff|nigger|nigga|omg|penis|piss|poop|prick|pube|"
        "pussy|queer|scrotum|sex|shit|sh1t|slut|smegma|spunk|tit|tosser|turd|twat|vagina|wank|whore|wtf|")
 
 
