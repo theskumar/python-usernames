@@ -54,6 +54,10 @@ The default regular expression is as follows:
     (?<![.-])               # no - or . at the end
     $                       # end of string
 
+**Further Reading**
+
+- `Let’s talk about usernames <https://www.b-list.org/weblog/2018/feb/11/usernames/>`__
+
 **Note:**
 
 Words like ``bigcock12`` will validated just fine, only equality against
