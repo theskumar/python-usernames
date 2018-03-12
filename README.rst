@@ -1,7 +1,7 @@
 python-usernames
 ================
 
-|Build Status| |Coverage Status| |PyPI version| |PyPI|
+|Build Status| |Coverage Status| |PyPI version|
 
 Python library to validate usernames suitable for use in public facing
 applications where use can choose login names and sub-domains.
@@ -13,7 +13,7 @@ Features
 -  Validates against list of `banned
    words <https://github.com/theskumar/python-usernames/blob/master/usernames/reserved_words.py>`__
    that should not be used as username.
--  Python 2.6, 2.7, 3.3, 3.4, 3.5, pypi
+-  Python 2.7, 3.4, 3.5, 3.6, pypi
 
 Installation
 ------------
@@ -29,9 +29,10 @@ Usages
 
     from usernames import is_safe_username
 
-    >> is_safe_username("jerk")
+    >>> is_safe_username("jerk")
     False  # contains one of the banned words
-    >> is_safe_username("handsome!")
+
+    >>> is_safe_username("handsome!")
     False  # contains non-url friendly `!`
 
 **is\_safe\_username** takes the following optional arguments:
@@ -76,5 +77,3 @@ MIT
    :target: https://coveralls.io/github/theskumar/python-usernames?branch=master
 .. |PyPI version| image:: https://badge.fury.io/py/python-usernames.svg
    :target: http://badge.fury.io/py/python-usernames
-.. |PyPI| image:: https://img.shields.io/pypi/dm/python-usernames.svg
-   :target: https://pypi.python.org/pypi/python-usernames
