@@ -1,22 +1,27 @@
 language: python
 sudo: false
+
 python:
-- '2.6'
 - '2.7'
-- '3.3'
 - '3.4'
 - '3.5'
+- '3.6'
 - pypy
+
 install:
 - pip install python-coveralls
 - pip install -q -r requirements.txt
 - pip install --editable .
+
 before_script: flake8
+
 script:
 - coverage run --source=usernames/ --omit='*tests*' -m py.test tests/ -v --tb=native
 - coverage report
+
 after_script:
 - coveralls
+
 deploy:
   provider: pypi
   user: theskumar
