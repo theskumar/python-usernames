@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftheskumar%2Fpython-usernames.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftheskumar%2Fpython-usernames?ref=badge_shield)
+
 python-usernames
 ================
 
@@ -77,3 +79,7 @@ MIT
    :target: https://coveralls.io/github/theskumar/python-usernames?branch=master
 .. |PyPI version| image:: https://badge.fury.io/py/python-usernames.svg
    :target: http://badge.fury.io/py/python-usernames
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftheskumar%2Fpython-usernames.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftheskumar%2Fpython-usernames?ref=badge_large)
