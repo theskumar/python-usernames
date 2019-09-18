@@ -13,7 +13,7 @@ Features
 -  Validates against list of `banned
    words <https://github.com/theskumar/python-usernames/blob/master/usernames/reserved_words.py>`__
    that should not be used as username.
--  Python 2.7, 3.4, 3.5, 3.6, pypi
+-  Python 2.7, 3.4, 3.5, 3.6, 3.7 pypi
 
 Installation
 ------------
