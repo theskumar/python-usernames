@@ -4,6 +4,15 @@ from __future__ import unicode_literals
 from usernames import is_safe_username
 
 
+def test_blacklist():
+    assert not is_safe_username("helo", blacklist=["helo"])
+
+
+def test_whitelist():
+    assert not is_safe_username("he..lo", whitelist=["he..lo"])
+    assert is_safe_username("fuck", whitelist=["fuck"])
+
+
 def test_usernames():
     unsafe_words = [
         '!',

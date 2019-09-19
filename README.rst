@@ -35,14 +35,14 @@ Usages
     >>> is_safe_username("handsome!")
     False  # contains non-url friendly `!`
 
+
 **is\_safe\_username** takes the following optional arguments:
 
--  ``regex``: regular expression string that must pass before the banned
-   words is checked.
 -  ``whitelist``: a list of words that should be considered as always
    safe.
 -  ``blacklist``: a list of words that should be considered as unsafe.
-
+-  ``regex``: regular expression string that must pass before the banned
+   words is checked.
 The default regular expression is as follows:
 
 ::

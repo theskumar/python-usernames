@@ -17,13 +17,13 @@ username_regex = re.compile(r"""
     """, re.X)
 
 
-def is_safe_username(username, whitelist=None, blacklist=None,
+def is_safe_username(username, whitelist=[], blacklist=[],
                      regex=username_regex):
     if not re.match(regex, username):
         return False
     wordlist = get_reserved_wordlist()
-    whitelist = whitelist or set()
-    blacklist = blacklist or set()
+    whitelist = set(whitelist)
+    blacklist = set(blacklist)
     wordlist = wordlist - whitelist
     wordlist = wordlist.union(blacklist)
     return False if username.lower() in wordlist else True
