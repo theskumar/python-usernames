@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-'''
+
+"""
 List of reserved usernames (pre-defined list of special banned and reserved keywords in names,
 such as "root", "www", "admin"). Useful when creating public systems, where users can choose
 a login name or a sub-domain name.
@@ -8,7 +9,7 @@ __References:__
 1. http://www.bannedwordlist.com/
 2. http://blog.postbit.com/reserved-username-list.html
 3. https://ldpreload.com/blog/names-to-reserve
-'''
+"""
 
 _d = """
 about
@@ -455,4 +456,5 @@ yourusername
 def get_reserved_wordlist():
     return set(_d.splitlines())
 
-__all__ = ['get_reserved_wordlist']
+
+__all__ = ["get_reserved_wordlist"]

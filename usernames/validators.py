@@ -6,7 +6,8 @@ import re
 from .reserved_words import get_reserved_wordlist
 
 
-username_regex = re.compile(r"""
+username_regex = re.compile(
+    r"""
     ^                       # beginning of string
     (?!_$)                  # no only _
     (?![-.])                # no - or . at the beginning
@@ -14,15 +15,13 @@ username_regex = re.compile(r"""
     [a-zA-Z0-9_.-]+         # allowed characters, atleast one must be present
     (?<![.-])               # no - or . at the end
     $                       # end of string
-    """, re.X)
+    """,
+    re.X,
+)
 
 
 def is_safe_username(
-    username,
-    whitelist=[],
-    blacklist=[],
-    regex=username_regex,
-    max_length=None
+    username, whitelist=[], blacklist=[], regex=username_regex, max_length=None
 ):
     if max_length and len(username) > max_length:
         return False
