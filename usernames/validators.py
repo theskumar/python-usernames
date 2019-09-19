@@ -17,8 +17,15 @@ username_regex = re.compile(r"""
     """, re.X)
 
 
-def is_safe_username(username, whitelist=[], blacklist=[],
-                     regex=username_regex):
+def is_safe_username(
+    username,
+    whitelist=[],
+    blacklist=[],
+    regex=username_regex,
+    max_length=None
+):
+    if max_length and len(username) > max_length:
+        return False
     if not re.match(regex, username):
         return False
     wordlist = get_reserved_wordlist()

@@ -39,8 +39,9 @@ Usages
 **is\_safe\_username** takes the following optional arguments:
 
 -  ``whitelist``: a list of words that should be considered as always
-   safe.
--  ``blacklist``: a list of words that should be considered as unsafe.
+   safe. Default: ``[]``
+-  ``blacklist``: a list of words that should be considered as unsafe. Default: ``[]``
+-  ``max_length``: specify the maximun character a username can have. Default: ``None``
 -  ``regex``: regular expression string that must pass before the banned
    words is checked.
 The default regular expression is as follows:
