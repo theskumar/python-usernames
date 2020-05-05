@@ -28,8 +28,8 @@ def is_safe_username(
     if not re.match(regex, username):
         return False
     wordlist = get_reserved_wordlist()
-    whitelist = set(whitelist)
-    blacklist = set(blacklist)
+    whitelist = set([each_whitelisted_name.lower() for each_whitelisted_name in whitelist])
+    blacklist = set([each_blacklisted_name.lower() for each_blacklisted_name in blacklist])
     wordlist = wordlist - whitelist
     wordlist = wordlist.union(blacklist)
     return False if username.lower() in wordlist else True
