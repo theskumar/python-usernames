@@ -11,11 +11,13 @@ def test_max_lenght():
 
 def test_blacklist():
     assert not is_safe_username("helo", blacklist=["helo"])
+    assert not is_safe_username("helo", blacklist=["Helo"])
 
 
 def test_whitelist():
     assert not is_safe_username("he..lo", whitelist=["he..lo"])
     assert is_safe_username("fuck", whitelist=["fuck"])
+    assert is_safe_username("fuck", whitelist=["Fuck"])
 
 
 def test_usernames():
