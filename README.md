@@ -1,5 +1,4 @@
-python-usernames
-================
+# python-usernames
 
 [![Build
 Status](https://travis-ci.org/theskumar/python-usernames.svg?branch=v0.1.0)](https://travis-ci.org/theskumar/python-usernames)
@@ -11,25 +10,22 @@ version](https://badge.fury.io/py/python-usernames.svg)](http://badge.fury.io/py
 Python library to validate usernames suitable for use in public facing
 applications where use can choose login names and sub-domains.
 
-Features
---------
+## Features
 
 -   Provides a default regex validator
 -   Validates against list of [banned
     words](https://github.com/theskumar/python-usernames/blob/master/usernames/reserved_words.py)
     that should not be used as username.
--   Python 2.7, 3.4, 3.5, 3.6, 3.7, 3.8 & pypi
+-   Python 3.8+
 
-Installation
-------------
+## Installation
 
     pip install python-usernames
 
-Usages
-------
+## Usages
 
-``` {.sourceCode .python}
-from usernames import is_safe_username
+```python
+from python_usernames import is_safe_username
 
 >>> is_safe_username("jerk")
 False  # contains one of the banned words
@@ -60,12 +56,12 @@ The default regular expression is as follows:
     (?<![.-])               # no - or . at the end
     $                       # end of string
 
-**Further Reading**
+## Further Reading
 
 -   [Let’s talk about
     usernames](https://www.b-list.org/weblog/2018/feb/11/usernames/)
 
-**Note:**
+## Gotchas
 
 Words like `bigcock12` will validated just fine, only equality against
 the [banned word
@@ -74,7 +70,6 @@ is checked. We don't try to be smart to avoid [Scunthorpe
 problem](https://en.wikipedia.org/wiki/Scunthorpe_problem). If you can
 come up with a algorithm/solution, please create an issue/pr :).
 
-License
--------
+## License
 
 MIT

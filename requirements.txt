@@ -1,4 +1,0 @@
-bumpversion
-flake8==2.4.1
-pytest
-twine

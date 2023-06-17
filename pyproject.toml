@@ -1,0 +1,67 @@
+[project]
+name = "python-usernames"
+version = "1.0.0"
+description = "Python library to validate usernames suitable for use in public facing applications."
+authors = [
+    { name = "Saurabh Kumar", email = "python-usernames@saurabh-kumar.com" }
+]
+dependencies = []
+readme = "README.md"
+license = "MIT"
+requires-python = ">= 3.8"
+
+keywords = [
+    'security',
+    'username',
+    'validation',
+    'user registration',
+    'safe',
+    'signup',
+    'regex',
+]
+
+classifiers=[
+    # As from https://pypi.org/classifiers/
+    # 'Development Status :: 1 - Planning',
+    # 'Development Status :: 2 - Pre-Alpha',
+    # 'Development Status :: 3 - Alpha',
+    'Development Status :: 4 - Beta',
+    # 'Development Status :: 5 - Production/Stable',
+    # 'Development Status :: 6 - Mature',
+    # 'Development Status :: 7 - Inactive',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Intended Audience :: Developers',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    # 'Topic :: System :: Systems Administration',
+    'Topic :: Utilities',
+    'Topic :: Security',
+    # 'Environment :: Web Environment',
+    # 'Framework :: Django',
+]
+
+[project.urls]
+Documentation = "https://github.com/theskumar/python-usernames/tree/main#readme"
+Source = "https://github.com/theskumar/python-usernames"
+Tracker = "https://github.com/theskumar/python-usernames/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest~=7.3.2",
+    "black~=23.3.0",
+    "ruff~=0.0.272",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true

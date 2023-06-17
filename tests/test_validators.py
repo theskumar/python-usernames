@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
 
-from usernames import is_safe_username
+from python_usernames import is_safe_username
 
 
 def test_max_lenght():
