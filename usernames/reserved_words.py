@@ -43,6 +43,7 @@ archive
 arse
 ass
 atom
+audio
 auth
 authentication
 authority
@@ -81,6 +82,7 @@ cadastro
 calendar
 campaign
 careers
+ceo
 cert
 cgi
 chat
@@ -90,6 +92,7 @@ clitoris
 cock
 code
 comercial
+commerce
 compare
 compras
 config
@@ -104,6 +107,7 @@ create
 crt
 css
 cunt
+daemon
 damn
 dashboard
 data
@@ -114,6 +118,7 @@ design
 designer
 dev
 devel
+devs
 dick
 dildo
 dir
@@ -177,6 +182,7 @@ hosting
 hostmaster
 hostname
 hpg
+hr
 html
 http
 httpd
@@ -194,6 +200,8 @@ intranet
 intro
 introduction
 invite
+invoice
+invoices
 ipad
 iphone
 irc
@@ -216,7 +224,9 @@ license
 licensing
 links
 list
+list-request
 lists
+live
 lmao
 lmfao
 localdomain
@@ -235,6 +245,7 @@ mail5
 mailer
 mailer-daemon
 mailing
+maintainer
 manager
 marketing
 master
@@ -287,10 +298,13 @@ ns1
 ns2
 ns3
 ns4
+ntp
+null
 old
 omg
 online
 operator
+operators
 order
 orders
 packer
@@ -298,7 +312,10 @@ page
 pager
 pages
 panel
+passwd
 password
+pay
+payment
 payments
 penis
 perl
@@ -320,17 +337,21 @@ post
 postfix
 postmaster
 posts
+pr
 pricing
 prick
+printer
 privacy
 profile
 project
 projects
 promo
+promotion
 proxy
 pub
 pube
 public
+purchase
 pussy
 python
 queer
@@ -393,12 +414,19 @@ stats
 status
 store
 stores
+stream
 subdomain
 subscribe
+sudo
+superuser
 suporte
 support
 survey
+sync
+sys
 sysadmin
+syslog
+sysop
 system
 tablet
 tablets
@@ -449,6 +477,7 @@ webmail
 webmaster
 website
 websites
+wheel
 whore
 win
 workshop
@@ -474,6 +503,7 @@ yourname
 yoursite
 yourusername
 """
+
 
 
 def get_reserved_wordlist():
