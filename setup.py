@@ -11,7 +11,7 @@ setup(
     description="Python library to validate usernames suitable for use in public facing applications.",
     long_description=readme,
     long_description_content_type="text/markdown",
-    version="0.3.1",
+    version="0.4.0",
     author="Saurabh Kumar",
     author_email="me+github@saurabh-kumar.com",
     url="http://github.com/theskumar/python-usernames",
