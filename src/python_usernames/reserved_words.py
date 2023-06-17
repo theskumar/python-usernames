@@ -15,16 +15,18 @@ except ImportError:
     # Try backported to PY<37 `importlib_resources`.
     import importlib_resources as pkg_resources
 
+
 def get_reserved_words():
-    content = ''
+    content = ""
     # https://stackoverflow.com/questions/6028000/
     try:
         with (pkg_resources.files("python_usernames") / "words.txt").open() as _f:
             content = _f.read()
     except AttributeError:
         # Python < PY3.9, fall back to method deprecated in PY3.11.
-        content = pkg_resources.read_text("python_usernames", 'words.txt')
+        content = pkg_resources.read_text("python_usernames", "words.txt")
 
     return set(content.splitlines())
+
 
 __all__ = ["get_reserved_words"]

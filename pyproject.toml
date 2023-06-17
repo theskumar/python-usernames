@@ -1,6 +1,5 @@
 [project]
 name = "python-usernames"
-version = "1.0.0"
 description = "Python library to validate usernames suitable for use in public facing applications."
 authors = [
     { name = "Saurabh Kumar", email = "python-usernames@saurabh-kumar.com" }
@@ -61,7 +60,11 @@ dev-dependencies = [
     "pytest~=7.3.2",
     "black~=23.3.0",
     "ruff~=0.0.272",
+    "hatch~=1.7.0",
 ]
 
 [tool.hatch.metadata]
 allow-direct-references = true
+
+[tool.hatch.version]
+path = "src/python_usernames/__about__.py"
