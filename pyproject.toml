@@ -67,5 +67,13 @@ dev-dependencies = [
 [tool.hatch.metadata]
 allow-direct-references = true
 
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/python_usernames"]
+
 [tool.hatch.version]
 path = "src/python_usernames/__about__.py"
