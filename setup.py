@@ -58,9 +58,9 @@ setup(
         # 'Environment :: Web Environment',
         # 'Framework :: Django',
     ],
-    keywords=(
+    keywords=[
         'username', 'validation', 'registration', 'python', 'safe', 'signup'
-    ),
+    ],
 )
 
 # (*) Please direct queries to the discussion group, rather than to me directly
