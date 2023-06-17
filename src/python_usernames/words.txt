@@ -38,6 +38,7 @@ avatar
 backup
 balls
 ballsack
+banned
 banner
 banners
 bastard
@@ -45,6 +46,7 @@ biatch
 billing
 bin
 bitch
+blocked
 blog
 blogs
 bloody
@@ -124,6 +126,7 @@ end
 errors
 events
 example
+exploit
 fag
 faq
 faqs
@@ -158,6 +161,7 @@ groups
 guarantee
 guest
 guests
+hacker
 hell
 help
 home
@@ -173,6 +177,7 @@ html
 http
 httpd
 https
+illegal
 image
 images
 imap
@@ -274,6 +279,7 @@ nickname
 nigga
 nigger
 no-reply
+noaccess
 nobody
 noc
 noreply
@@ -286,6 +292,7 @@ ns3
 ns4
 ntp
 null
+offensive
 old
 omg
 online
@@ -341,6 +348,7 @@ purchase
 pussy
 python
 queer
+qwerty
 random
 redir
 refund
@@ -357,6 +365,7 @@ sale
 sales
 sample
 samples
+scammer
 script
 scripts
 scrotum
@@ -383,6 +392,7 @@ slut
 smegma
 smtp
 soporte
+spammer
 spunk
 sql
 squid
@@ -408,6 +418,7 @@ superuser
 suporte
 support
 survey
+suspended
 sync
 sys
 sysadmin
@@ -430,6 +441,7 @@ test3
 teste
 testimonials
 tests
+testuser
 theme
 themes
 tit
@@ -457,6 +469,7 @@ vendas
 video
 videos
 visitor
+vulgarity
 wank
 web
 webmail
