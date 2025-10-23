@@ -56,6 +56,10 @@ The default regular expression is as follows:
     (?<![.-])               # no - or . at the end
     $                       # end of string
 
+## Credits
+
+- [The-Big-Username-Blocklist](https://github.com/marteinn/The-Big-Username-Blocklist)
+
 ## Further Reading
 
 -   [Let’s talk about
