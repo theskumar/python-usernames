@@ -1,11 +1,8 @@
 # python-usernames
 
-[![Build
-Status](https://travis-ci.org/theskumar/python-usernames.svg?branch=v0.1.0)](https://travis-ci.org/theskumar/python-usernames)
-[![Coverage
-Status](https://coveralls.io/repos/theskumar/python-usernames/badge.svg?branch=master&service=github)](https://coveralls.io/github/theskumar/python-usernames?branch=master)
-[![PyPI
-version](https://badge.fury.io/py/python-usernames.svg)](http://badge.fury.io/py/python-usernames)
+[![Test](https://github.com/theskumar/python-usernames/actions/workflows/test.yml/badge.svg)](https://github.com/theskumar/python-usernames/actions/workflows/test.yml)
+[![PyPI version](https://badge.fury.io/py/python-usernames.svg)](https://pypi.org/project/python-usernames/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/python-usernames.svg)](https://pypi.org/project/python-usernames/)
 
 Python library to validate usernames suitable for use in public facing
 applications where use can choose login names and sub-domains.
@@ -74,6 +71,43 @@ lists](https://github.com/theskumar/python-usernames/blob/master/usernames/reser
 is checked. We don't try to be smart to avoid [Scunthorpe
 problem](https://en.wikipedia.org/wiki/Scunthorpe_problem). If you can
 come up with a algorithm/solution, please create an issue/pr :).
+
+## Development
+
+This project uses [uv](https://docs.astral.sh/uv/) for dependency management and packaging.
+
+### Setup
+
+1. Install uv:
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. Clone the repository and sync dependencies:
+   ```bash
+   git clone https://github.com/theskumar/python-usernames.git
+   cd python-usernames
+   uv sync --all-groups
+   ```
+
+### Running Tests
+
+```bash
+uv run pytest
+```
+
+### Linting
+
+```bash
+uv run ruff check .
+uv run black --check .
+```
+
+### Building
+
+```bash
+uv build
+```
 
 ## License
 

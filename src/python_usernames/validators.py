@@ -1,4 +1,5 @@
 import re
+from functools import lru_cache
 
 from .reserved_words import get_reserved_words
 
@@ -17,34 +18,40 @@ username_regex = re.compile(
 )
 
 
+@lru_cache(maxsize=1)
+def _get_cached_reserved_words():
+    """Cache reserved words to avoid repeated file I/O."""
+    return get_reserved_words()
+
+
 def is_safe_username(
     username: str, whitelist=None, blacklist=None, regex=username_regex, max_length=None
 ) -> bool:
-    # check for max length
+    # check for max length (fastest check first)
     if max_length and len(username) > max_length:
         return False
 
     # check against provided regex
-    if not re.match(regex, username):
+    if not regex.match(username):
         return False
 
-    # ensure the word is not in the blacklist and is not a reserved word
-    if whitelist is None:
-        whitelist = []
+    username_lower = username.lower()
 
-    if blacklist is None:
-        blacklist = []
+    # Fast path: no custom lists
+    if not whitelist and not blacklist:
+        return username_lower not in _get_cached_reserved_words()
 
-    default_words = get_reserved_words()
+    # Start with reserved words
+    forbidden = _get_cached_reserved_words().copy()
 
-    whitelist = set(
-        [each_whitelisted_name.lower() for each_whitelisted_name in whitelist]
-    )
-    blacklist = set(
-        [each_blacklisted_name.lower() for each_blacklisted_name in blacklist]
-    )
+    # Apply whitelist (remove from forbidden)
+    if whitelist:
+        whitelist_set = {w.lower() for w in whitelist}
+        forbidden -= whitelist_set
 
-    default_words = default_words - whitelist
-    default_words = default_words.union(blacklist)
+    # Apply blacklist (add to forbidden)
+    if blacklist:
+        blacklist_set = {w.lower() for w in blacklist}
+        forbidden |= blacklist_set
 
-    return False if username.lower() in default_words else True
+    return username_lower not in forbidden

@@ -57,13 +57,12 @@ Tracker = "https://github.com/theskumar/python-usernames/issues"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.rye]
-managed = true
-dev-dependencies = [
-    "pytest~=7.3.2",
-    "black~=23.3.0",
-    "ruff~=0.0.272",
-    "hatch~=1.7.0",
+[dependency-groups]
+dev = [
+    "pytest>=7.3.2",
+    "black>=23.3.0",
+    "ruff>=0.0.272",
+    "hatch>=1.7.0",
 ]
 
 [tool.hatch.metadata]
