@@ -59,6 +59,7 @@ The default regular expression is as follows:
 ## Credits
 
 - [The-Big-Username-Blocklist](https://github.com/marteinn/The-Big-Username-Blocklist)
+- [Profanity-filter](https://github.com/rominf/profanity-filter/blob/master/profanity_filter/data/en_profane_words.txt)
 
 ## Further Reading
 
